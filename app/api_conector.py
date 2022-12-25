@@ -23,7 +23,7 @@ class API:
             print('Error al intentar mostrar los datos')
 
 
-    def crear_producto(name,price,quantity):
+    def crear_producto(name, price, quantity):
         headers = {'Content-Type': 'application/json'}
         url = "http://localhost:4000/products"
         data = "{\"name\":\"keyboard\",\"price\": 2000,\"quantity\": 5}"
@@ -59,7 +59,7 @@ class API:
 url = "http://localhost:4000/products"
 #probando = API(url)
 #probando.mostrar_productos()
-API.mostrar_productos()
+#API.mostrar_productos()
 #API.crear_producto()
 #API.actualizar_producto(input("Ingrese el nombre del producto que desea actualizar\n"))
 #API.mostrar_productos()

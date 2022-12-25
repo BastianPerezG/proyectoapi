@@ -42,8 +42,10 @@ class Menu:
             price = int(input("Ingrese el precio del nuevo producto:\n"))
             quantity= int(input("Ingrese la cantidad para el nuevo producto:\n"))
 
+            #data = f'{"name": "{name}","price": {price},"quantity": {quantity}}'
+
             
-            API.crear_producto(name,price,quantity)
+            API.crear_producto(name, price, quantity)
             input("presione una tecla para continuar")
             Menu.__init__()
             
